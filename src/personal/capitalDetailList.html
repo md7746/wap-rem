@@ -1,0 +1,137 @@
+<div class="container personal-inner">
+    <%- include('../common/aside.html') %>
+        <article class="col-sm-10 personal-info-wrap">
+            <h2 class="tit">资金明细</h2>
+            <div style="width:250px;padding-top:20px;">
+                <form class="layui-form" action="/member/capitalDetailList" id="rechargeForm" method="post">
+                    <input type="hidden" id="pageNo" name="pageNo" value="1" />
+                    <!--      <div class="layui-form-item">
+                      <select name="date" lay-verify="required">
+                        <option value="">当月</option>
+                        <option value="0">上个月</option>
+                        <option value="1">最近三个月</option>
+                        <option value="2">最近六个月</option>
+                        <option value="3">最近一年</option>
+                        <option value="4">全部</option>
+                      </select>
+                  </div> -->
+                </form>
+            </div>
+            <div class="wap-box">
+            <table class="layui-table w250">
+                <colgroup>
+                    <col width="100">
+                    <col width="150">
+                    <col width="100">
+                    <col width="120">
+                    <col width="120">
+                    <col width="120">
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>流水ID</th>
+                        <th>类型</th>
+                        <th>流水金额</th>
+                        <th>当前余额</th>
+                        <th>可用金额</th>
+                        <th>锁定金额</th>
+                        <th>发生时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>20180913022704857</td>
+                        <td>卖出转入</td>
+                        <td>9180.00</td>
+                        <td>66017041.90</td>
+                        <td>66014452.00</td>
+                        <td>2589.90</td>
+                        <td>2018-09-13 14:27:05</td>
+                    </tr>
+                    <tr>
+                        <td>20180913022702850</td>
+                        <td>卖出保证金解冻</td>
+                        <td>918.00</td>
+                        <td>66007861.90</td>
+                        <td>66005272.00</td>
+                        <td>2589.90</td>
+                        <td>2018-09-13 14:27:03</td>
+                    </tr>
+                    <tr>
+                        <td>20180913022657103</td>
+                        <td>买入转出</td>
+                        <td>9450.00</td>
+                        <td>66007861.90</td>
+                        <td>66004354.00</td>
+                        <td>3507.90</td>
+                        <td>2018-09-13 14:26:57</td>
+                    </tr>
+                    <tr>
+                        <td>20180913022653530</td>
+                        <td>买入转出</td>
+                        <td>565.00</td>
+                        <td>66017311.90</td>
+                        <td>66004354.00</td>
+                        <td>12957.90</td>
+                        <td>2018-09-13 14:26:54</td>
+                    </tr>
+                    <tr>
+                        <td>20180913022646252</td>
+                        <td>买入转出</td>
+                        <td>9120.00</td>
+                        <td>66017876.90</td>
+                        <td>66004354.00</td>
+                        <td>13522.90</td>
+                        <td>2018-09-13 14:26:46</td>
+                    </tr>
+                    <tr>
+                        <td>20180913022539203</td>
+                        <td>买入冻结</td>
+                        <td>565.00</td>
+                        <td>66026996.90</td>
+                        <td>66004354.00</td>
+                        <td>22642.90</td>
+                        <td>2018-09-13 14:25:39</td>
+                    </tr>
+                    <tr>
+                        <td>20180913022503446</td>
+                        <td>买入冻结</td>
+                        <td>9450.00</td>
+                        <td>66026996.90</td>
+                        <td>66004919.00</td>
+                        <td>22077.90</td>
+                        <td>2018-09-13 14:25:03</td>
+                    </tr>
+                    <tr>
+                        <td>20180913022336164</td>
+                        <td>卖出保证金冻结</td>
+                        <td>918.00</td>
+                        <td>66026996.90</td>
+                        <td>66014369.00</td>
+                        <td>12627.90</td>
+                        <td>2018-09-13 14:23:36</td>
+                    </tr>
+                    <tr>
+                        <td>20180913022017817</td>
+                        <td>买入冻结</td>
+                        <td>9120.00</td>
+                        <td>66026996.90</td>
+                        <td>66015287.00</td>
+                        <td>11709.90</td>
+                        <td>2018-09-13 14:20:18</td>
+                    </tr>
+                    <tr>
+                        <td>20180913021916808</td>
+                        <td>买入转出</td>
+                        <td>14430.00</td>
+                        <td>66026996.90</td>
+                        <td>66024407.00</td>
+                        <td>2589.90</td>
+                        <td>2018-09-13 14:19:17</td>
+                    </tr>
+                </tbody>
+            </table></div>
+            <div id="demo1"></div>
+        </article>
+</div>

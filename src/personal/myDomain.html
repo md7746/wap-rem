@@ -1,0 +1,184 @@
+<div class="container personal-inner">
+    <%- include('../common/aside.html') %>
+        <article class="col-sm-10 personal-info-wrap">
+            <h2 class="tit">我的域名</h2>
+            <div style="overflow:hidden;height:15px;"></div>
+            <div class="wode">
+                <form class="layui-form" action="/member/myDomain" method="post" id="domainForm">
+                    <input type="hidden" id="pageNo" name="pageNo" value="1" />
+                    <div class="row">
+                        <div class="col-sm-12 col-md-11">
+                            <div class="row mydomain">
+                                <div class="col-sm-6 col-lg-3">
+                                    <label class="layui-form-label" style="width:100px;">域名品种</label>
+                                    <div class="layui-input-block">
+                                        <select name="domainType.id" id="domainTypeId">
+                                            <option value="">全部</option>
+                                            <option value="1029848747072376832">五数ZV.CN</option>
+                                            <option value="1029850209550684160">五数无04NET</option>
+                                            <option value="1030121087601807360">三声母ZV.CN</option>
+                                            <option value="1030631265220759552">四声ZV.CN</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <label class="layui-form-label" style="width:100px;">注册商</label>
+                                    <div class="layui-input-block">
+                                        <select name="registrarsName" id="registrarsName">
+                                            <option value="">全部</option>
+                                            <option value="阿里云">阿里云</option>
+                                            <option value="爱名">爱名</option>
+                                            <option value="易名">易名</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <label class="layui-form-label" style="width:100px;">到期时间</label>
+                                    <div class="layui-input-block">
+                                        <select name="expiryTimeSelect">
+                                            <option value="">全部</option>
+                                            <option value="1">一个月</option>
+                                            <option value="2">三个月</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <label class="layui-form-label" style="width:100px;">状态</label>
+                                    <div class="layui-input-block">
+                                        <select name="state">
+                                            <option value="">全部</option>
+                                            <option value="1">正常</option>
+                                            <option value="2">委单中</option>
+                                            <option value="3">申请兑回</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <a href="javascript:;" class="layui-btn" id="search" onclick="selectBy()">查询</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div style="overflow:hidden;height:10px;"></div>
+            <a class="layui-btn" id="appOutBtn">申请转出</a>
+            <div class="wap-box">
+                <table class="layui-table w150">
+                    <thead>
+                        <tr>
+                            <th>选择</th>
+                            <th>域名</th>
+                            <th>品种</th>
+                            <th>状态</th>
+                            <th>注册商</th>
+                            <th>域名到期时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="id" lay-skin="switch" value="1031386197465776128">
+                            </td>
+                            <td>49240.zv.cn</td>
+                            <td>五数ZV.CN</td>
+                            <td>正常</td>
+                            <td>易名</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="id" lay-skin="switch" value="1031386197696462848">
+                            </td>
+                            <td>49241.zv.cn</td>
+                            <td>五数ZV.CN</td>
+                            <td>正常</td>
+                            <td>易名</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="id" lay-skin="switch" value="1031386197994258432">
+                            </td>
+                            <td>49242.zv.cn</td>
+                            <td>五数ZV.CN</td>
+                            <td>正常</td>
+                            <td>易名</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="id" lay-skin="switch" value="1031386198304636928">
+                            </td>
+                            <td>49243.zv.cn</td>
+                            <td>五数ZV.CN</td>
+                            <td>正常</td>
+                            <td>易名</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="id" lay-skin="switch" value="1031386198598238208">
+                            </td>
+                            <td>49244.zv.cn</td>
+                            <td>五数ZV.CN</td>
+                            <td>正常</td>
+                            <td>易名</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="id" lay-skin="switch" value="1031386198891839488">
+                            </td>
+                            <td>49245.zv.cn</td>
+                            <td>五数ZV.CN</td>
+                            <td>正常</td>
+                            <td>易名</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="id" lay-skin="switch" value="1031386199164469248">
+                            </td>
+                            <td>49246.zv.cn</td>
+                            <td>五数ZV.CN</td>
+                            <td>正常</td>
+                            <td>易名</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="id" lay-skin="switch" value="1031386199420321792">
+                            </td>
+                            <td>49247.zv.cn</td>
+                            <td>五数ZV.CN</td>
+                            <td>正常</td>
+                            <td>易名</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="id" lay-skin="switch" value="1031386199659397120">
+                            </td>
+                            <td>49248.zv.cn</td>
+                            <td>五数ZV.CN</td>
+                            <td>正常</td>
+                            <td>易名</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="id" lay-skin="switch" value="1031386199948804096">
+                            </td>
+                            <td>49249.zv.cn</td>
+                            <td>五数ZV.CN</td>
+                            <td>正常</td>
+                            <td>易名</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="demo1"></div>
+        </article>
+</div>

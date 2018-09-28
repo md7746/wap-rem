@@ -1,0 +1,54 @@
+<div class="wrap container login-wrap">
+    <!-- 用户登录 -->
+    <div class="main-reg">
+        <div class="row" id="Login">
+            <div class="col-sm-12 col-md-7 hidden-xs reIMg">
+                <img src="images/reg.jpg" />
+            </div>
+            <div class="col-sm-12 col-md-5 reIMg2">
+                <div class="loginbox">
+                    <ul class="Tab">
+                        <li id="U" class="on" onclick="$('#Mobile').hide();$('#User').fadeIn(500);this.className='on';M.className='';EnterProcess(0);">账号登录</li>
+                        <li id="M" onclick="$('#User').hide();$('#Mobile').fadeIn(500);this.className='on';U.className='';EnterProcess(1);">短信登录</li>
+                    </ul>
+                    <div class="Body">
+                        <ul id="User">
+                            <form action="" id="passwordForm">
+                                <li><i class="fa fa-mobile-phone"></i>
+                                    <input id="username" name="username" type="text" class="Mobile" placeholder="用户ID/手机号">
+                                </li>
+                                <li><i class="fa fa-lock"></i>
+                                    <input id="password" name="password" type="password" class="Password" placeholder="登录密码">
+                                </li>
+                                <li>
+                                    <input id="passwordBtn" type="button" class="ButtonA" value="立即登录">
+                                </li>
+                            </form>
+                        </ul>
+                        <ul id="Mobile" style="display:none">
+                            <form action="" id="mobileLoginForm" method="post">
+                                <input id="token" name="token" type="hidden" value="467601a0-54ff-4891-8835-63a69401bb79" placeholder="token" class="r txt" />
+                                <li><i class="fa fa-mobile-phone"></i>
+                                    <input type="text" class="Mobile" id="phone" name="phone" placeholder="输入您的手机号">
+                                </li>
+                                <li><i class="fa fa-key"></i>
+                                    <input type="text" class="Key" id="mobileCode" name="mobileCode" placeholder="验证码">
+                                    <input id="checkcode" type="button" class="lr-btnSendCode yzcode" value="获取验证码">
+                                </li>
+                                <li>
+                                    <input id="mobileBtn" type="button" class="ButtonA" value="立即登录">
+                                </li>
+                            </form>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="/forgot" class="Gray fl">忘记密码？</a>
+                                <a href="/register" class="red fr">免费注册账户</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

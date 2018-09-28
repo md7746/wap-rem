@@ -1,0 +1,32 @@
+/*———————————— import ————————————*/
+@import "../../less/bootstrap/variables.less";
+@import "../../less/init.less";
+
+
+.wrap{.pb(15px);}
+
+
+.zdjy-con{.h(auto);.mt(15px);}
+.filter{
+	&{.m(20px 0);.bd(solid 3px #298be4);.brs(10px);.p(10px 0);.pb(0);.pr();}
+	.layui-nav{.m(6px 0);.mb(20px);}
+	.layui-nav .layui-nav-item a:hover,.layui-nav .layui-this a{.c(#187DE3);}
+	.layui-nav .layui-nav-item{.h(30px);.lh(20px);}
+	.layui-nav{.bg(none);.bb(1px solid #ccc);}
+	.layui-nav a{.c(#000);.f(16px);.p(0 16px);}
+	.layui-input{.hlh(26px);}
+	
+	.layui-nav .fl{.w(80px);.tr();.mr(15px);}
+
+	.last-ul{.mb(0);.bb(none);}
+	.seach{.pa();.r(10px);.b(10px);}
+	.seach .blue-btn{.pr();.t(1px);}
+}
+
+@media screen and (max-width:@screen-sm) {
+	.filter{.pb(15px);}
+	.layui-nav .fl{width:100% !important;text-align:left !important;}
+	.layui-nav .layui-nav-item{height:30px !important;line-height:30px !important;}
+	.layui-nav .layui-nav-item a{.p(0 8px);}
+	.seach{position:relative !important;bottom:0 !important;right:0 !important;.ml(15px);.mt(10px);}
+}

@@ -1,0 +1,41 @@
+/*———————————— import ————————————*/
+@import "../../less/bootstrap/variables.less";
+@import "../../less/init.less";
+
+/*———————————— common ————————————*/
+.wrap{pl 0  ;par 0  ;}
+
+.line{m 20px 0  ;h 1px  ;bg #eee  ;}
+
+/*———————————— 域名内容页 ————————————*/
+.domain-content{
+	&>.col-md-8{br 1px solid #ddd  ;pr;}
+	.layui-table tbody tr:hover{bg none  ;}
+	.layui-table{
+		caption{f 26px  ;fb;c @mblue  ;bb 1px solid #eee  ;tc;pb 10px  ;}
+		caption span{ml 10px  ;pr;t -5px  ;font-size:16px !important;height:24px !important;line-height:24px !important;}
+		th,td{bd none  ;f 18px  ;}
+		th{tr;c #888  ;}
+		td input,td select{w 60%  ;}
+		td a.green-btn{tc;}
+		td a:hover{c;}
+		td.tl{pl 40px  ;}
+		input{f 16px  ;}
+	}
+	section{
+		&{mt 15px  ;c #666  ;par 10px  ;}
+		h4{f 16px  ;fb;}
+		p{mt 15px  ;tj;mb 15px  ;bb 1px #ddd dotted  ;pb 15px  ;}
+	}
+}
+@media screen and (max-width:@screen-xs) {
+	.domain-content{
+		&>.col-md-8{br none  ;}
+		.layui-table{
+			caption{tc;pl 0  ;ti 0  ;}
+			th,td{bd none  ;f 16px  ;p 5px 3px  ;}
+			td a.green-btn{l 0  ;}
+		}
+		section{par 0px  ;}
+	}
+}

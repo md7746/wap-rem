@@ -1,0 +1,45 @@
+/*———————————— import ————————————*/
+@import "../../less/bootstrap/variables.less";
+@import "../../less/init.less";
+
+/*———————————— common ————————————*/
+input{bd 0  ;}
+
+/*———————————— 用户登录 ————————————*/
+#Login .loginbox{border:1px solid #ddd;padding:10px 50px;box-shadow:0 0 8px #eee;border-radius:10px;text-align:center;}
+#Login h2{font-size:20px;margin-top:20px;color:#e00000}
+#Login .Tab{margin:20px 0;}
+#Login .Tab li{float:left;width:50%;border-bottom:2px solid #dadada;text-align:center;cursor:pointer;font-size:18px;line-height:30px}
+#Login .Tab li.on{border-bottom:2px solid #eb0c1c;font-weight:bold;}
+#Login .Body{overflow:hidden;}
+#Login .Body li{padding:10px 0;overflow:hidden;}
+#Login .Body li a{font-size:16px;margin:0 5px;}
+#Login .Body li input{margin:0;}
+#Login .Body li .ButtonA{width:100%;}
+
+#Login .Body{
+	li{pr;}
+	li i{pa;l 16px  ;t 20px  ;f 22px  ;op 80  ;}
+}
+
+.yzcode{width:48%!important;float:right;height:42px;line-height:42px;border:1px solid #e5e5e5;background:#f7f7f7;font-size:16px;border-radius:3px;cursor:pointer;text-align:center}
+.ButtonA{min-width:150px;height:45px;line-height:40px;font-size:18px;border-radius:3px;border:0;color:#fff;cursor:pointer;margin:0;
+    background: #3374ca;
+}
+.ButtonA:hover{transition:all .5s;-webkit-transition:all .5s;opacity:.7;filter:alpha(opacity=70);}
+#Login .Tab {
+    margin: 20px 0;
+   overflow: hidden;
+}
+.Mobile,.Password,.Key{height:42px!important;padding-left:40px!important;box-sizing:border-box;width:100%;}
+.Mobile{background-position:-170px -585px;background-color:#f7f7f7;}
+.Password{background-position:-170px -635px;background-color:#f7f7f7;}
+.Key{background-position:-170px -685px;background-color:#f7f7f7;width:48%!important;float:left}
+
+.login-wrap{pt 30px  ;}
+.main-reg{m 30px 50px  ;}
+
+@media screen and (max-width:@screen-sm){
+	.main-reg{margin:0 !important;}
+	.login-wrap{margin-bottom:10px !important;padding-top:15px !important;}
+}

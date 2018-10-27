@@ -1,118 +1,20 @@
 /*———————————— import ————————————*/
-@import "../../less/bootstrap/variables.less";
-@import "../../less/init.less";
+/*rem*/
+@import "../../less/rem/var.less";
+@import "../../less/rem/adapter.less";
+@import "../../less/rem/mixins.less";
+
+@import "../../less/mMixins.less";
 
 /*———————————— common ————————————*/
-h3{.f(22px);.c(#e80012);}
-h4{.m(0);}
 
-/* 图标 */
-.jyhq-ico{.bg(url(images/ico/jyhq-ico.png));.w(22px);.h(22px);.dib();.mr(5px);.pr();.t(5px);}
-.pmzp-ico{.bg(url(images/ico/pmzp-ico.png));.w(22px);.h(22px);.dib();.mr(5px);.pr();.t(5px);}
-.j-ico{.bg(url(images/ico/j-ico.png));.w(22px);.h(20px);.dib();.mr(5px);.pr();.t(5px);}
-.jf-ico{.bg(url(images/ico/jf-ico.png));.w(20px);.h(22px);.dib();.mr(5px);.pr();.t(5px);}
-.w-ico{.bg(url(images/ico/w-ico.png));.w(21px);.h(22px);.dib();.mr(5px);.pr();.t(5px);}
-.ed-ico{.bg(url(images/ico/ed-ico.png));.w(22px);.h(20px);.dib();.mr(5px);.pr();.t(5px);}
 
-/*———————————— 成交数据 ————————————*/
-.cj-data{
-	&{.mih(66px);.pt(22px);.pb(22px);}
-	span{.f(22px);.mr(22px);}
-	span span{.ml(0);.c(#e80012);}
-}
-.wap-cj-data{
-	&{.dn();.mt(15px);.f(18px);}
-	div{.flex1();.tc();.br(1px solid #ccc);}
-	span{.db();.f(22px);.fb();.c(@mred);}
-}
-@media screen and (max-width:@screen-sm) {
-	.wap-cj-data{.flex();}
+.head{
+	&{.bg(#44bc40);}
+	i{.w(36rem/@r);.h(29rem/@r);.dib();.bg(url(images/ico/back.jpg));.bgs(100% 100%);.m(0 22rem/@r 0 32rem/@r);}
+	h2{.f(36rem/@r);.hlh(98rem/@r);.c();}
 }
 
-/*———————————— 交易行情 ————————————*/
-.jyhq{
-	&{.oh();max-height:304px;border-bottom:#e6e6e6 solid 1px;}
-	&>table{.w(100%);max-height:250px;}
-	.layui-table{margin: 0 !important;}
-	#B2 .layui-table{.pr();}
-	#B2 .layui-table:nth-child(1){.t(-1px);}
-	#B2 .layui-table:nth-child(2){.t(-2px);}
-	#B2 .layui-table:nth-child(3){.t(-3px);}
-
+.banner{
+	img{.w(100%);}
 }
-@media screen and (max-width:@screen-sm) {
-	#B1{max-height:156px !important;border-bottom:#e6e6e6 solid 1px;.oh();}
-	.jyhq>table{
-		.type{width:28% !important;}
-		.regiter{width:42% !important;}
-		.total{width:30% !important;}
-	}
-	.zdjy,.jyhq{padding-top:6px !important;}
-}
-
-/*———————————— 自定交易 ————————————*/
-.zdjy{
-	&{.pr();}
-	i.fa{.pa();.b(40%);.cp();.op(30);.transition(.1s);}
-	i.fa:hover{.op(100);}
-	i.fa-chevron-circle-left{.l(-5px);}
-	i.fa-chevron-circle-right{.r(-5px);.l(auto);}
-}
-.zdjy-con{
-	&{.m(1px);.bt(1px #ececec solid);.br(1px #ececec solid);.bl(1px #ececec solid);.oh();.h(379px);}
-	h3{.mb(10px);}
-	.pmzp-item{
-		&{.dib();.bb(1px #ececec solid);.transition(.2s);.p(0);.pl(15px);.bg(#fffdfb);.pr();.l(1px);.br(1px #ececec solid);.pr();.oh();.h(126px);}
-		&:hover{.bg(#fff5e7);}
-		table{
-			&{margin:0 !imp;.bg(none);}
-			td{text-align:left !important;.bd(none);padding:3px 5px !important;.f(16px);}
-		}
-		.jbiao{.pa();.r(-20px);.t(0px);.db();.bg(@mred2);.c();.rotate(45deg);.hlh(30px);.w(70px);.tc();.bs(-1px 1px 1px rgba(0,0,0,.5));.f13();}
-		.green-bg{.bg(@mgreen2);}
-		.blue-bg{.bg(@mblue2);}
-	}
-	.layui-table tbody tr:hover{.bg(none);}
-}
-@media screen and (max-width:@screen-sm) {
-	.zdjy-con .layui-table td,.zdjy-con .layui-table th{font-size:16px !important;}
-}
-@media screen and (max-width:@screen-md) {
-
-}
-@media screen and (max-width:@screen-lg) {
-
-}
-/*———————————— 拍卖直播 ————————————*/
-.pmzp-con{
-	&{.m(1px);.bt(1px #ececec solid);.br(1px #ececec solid);}
-	h3{.mb(10px);}
-	.pmzp-item{
-		&{.dib();.bl(1px #ececec solid);.bb(1px #ececec solid);.h(126px);.pt(20px);.transition(.2s);}
-		&:hover{.bg(#f7f7f7);}
-		p,time{.f();.db();.tover();.maw(50px);}
-		p{.c(#999);}
-		time{.c(#433d3d);}
-		div{.h(40px);.fl();}
-		.fir-pmzp-item{.w(60%);.br(1px dashed #ccc);}
-		.sec-pmzp-item time{.dib();}
-		.sec-pmzp-item{.w(40%);.pl(20px);}
-		p{.mt(5px);}
-	}
-
-}
-
-/*———————————— 精品一口价 ————————————*/
-.one-price{
-	h2{.mb(0);}
-	h3{.c(#186cc4);.m(0);}
-	.one-price-con{.pr();.l(-15px);.pl(15px);}
-	.one-price-con .col-xs-6{.p(0);}
-	.price-item{.bg(#f5fafe);.p(16px);.h(120px);.ml(15px);.mt(15px);.transition(.3s);}
-	.price-item p{.c(#7097b8);}
-	a:hover .price-item{.bg(#c1e3ff);}
-	a:hover .price-item p{.c(#253f56);}
-}
-
-/*———————————— 精品一口价 ————————————*/
-

@@ -46,7 +46,7 @@ mergePath = cssFilename.map((item) => {
 jsPath = cssPath.map((item) => {
     return item.replace(/.css/, '.js');
 });
- // console.log(jsPath);
+ // console.log(cssPath);
 /* ----------------------------------------------- 阶段一(页面制作) ----------------------------------*/
 //我自己的css简写规则
 function myCss(files) {
